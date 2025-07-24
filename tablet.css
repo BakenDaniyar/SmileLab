@@ -93,6 +93,7 @@ font-size:14px;
 margin-top:75px;
 }
 .grid-services-carts{
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(380px, 2fr));
     grid-column-gap:15px;
     grid-row-gap:20px;
