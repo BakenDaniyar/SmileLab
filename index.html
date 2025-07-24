@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tablet.css">
+<link rel="stylesheet" href="phone.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Smile<span class="black-color">Lab</span>
+        </div>
+
+        <div class="burger-icon" id="burgerIcon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="#services" class="menu">Услуги</a>
+    <a href="#doctors" class="menu">Врачи</a>
+    <a href="#questions" class="menu">Вопросы</a>
+    <a href="#feedback" class="menu">Отзывы</a>
+    <a href="#contacts" class="menu">Контакты</a>
+    <button class="btn mobile-btn">Бесплатная консультация</button>
+  </nav>
+
+  
+        <div class="header-texts">
+            <a href="#" class="menu">Услуги</a>
+            <a href="#" class="menu">Врачи</a>
+            <a href="#" class="menu">Вопросы</a>
+            <a href="#" class="menu">Отзывы</a>
+            <a href="#" class="menu">Контакты</a>
+        </div>
+            <a href="https://wa.me/+77761518592"  class="btn" id="HeaderBtn">Бесплатная консультация</a>
+    </header>
+
+    <div class="hero-block">
+        <div class="for-phone">
+            <p class="big-text black-color width-main">Ваша идеальная улыбка наша профессия</p>
+            <p class="medium-text">Современная стоматология без боли и стресса. Используем европейские  материалы и цифровые технологии для точной диагностики. Первичная  консультация — бесплатно. Гарантия на все виды работ — от 1 года.</p>
+            <button class="btn2" id="openModal">Записаться онлайн</button>
+
+
+
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Запишитесь онлайн</h2>
+
+    <form id="form">
+      <label>Ваше Имя</label>
+      <input type="text" id="name" required>
+
+      <label>Номер телефона</label>
+      <input type="tel" id="phone" required>
+
+      <label>Ваша проблема</label>
+      <textarea id="problem" required></textarea>
+
+      <button type="submit" id="submitBtn" disabled>Отправить</button>
+    </form>
+  </div>
+</div>
+
+            
+
+
+
+            <div class="all-messanger">
+                <a href="https://wa.me/+77761518592"><img src="img/whatsapp.png" alt="whatsapp" class="messanger"></a>
+                <a href="https://www.instagram.com/daniyar_baken/"><img src="img/instagram.png" alt="instagram" class="messanger"></a>
+                <a href="https://t.me/BakenDaniyar"><img src="img/telegram.png" alt="telegram" class="messanger"></a>
+            </div>
+        </div>
+        <img src="img/main.png" alt="BigDoctorPicture" class="main-img">
+    </div>
+
+    <section class="contacts-section">
+        <div class="contact">
+            <img src="img/phone.png" alt="phone" class="contact-img">
+            <div class="under-texts-contact">
+                <div class="big-text-contact">Телефон</div>
+                <div class="small-text-contact">+7 777 777 77 77</div>
+            </div>
+        </div>
+        <div class="contact">
+            <img src="img/adress.png" alt="adress" class="contact-img">
+            <div class="under-texts-contact">
+                <div class="big-text-contact">Адрес</div>
+                <div class="small-text-contact">г Астана,Назарбаева 23</div>
+            </div>
+        </div>
+        <div class="contact">
+            <img src="img/email.png" alt="email" class="contact-img">
+            <div class="under-texts-contact">
+                <div class="big-text-contact">Почта</div>
+                <div class="small-text-contact">SmileLab@gmail.com</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="big-text align">Услуги</div>
+
+        <div class="grid-services-carts">
+            <div class="service-cart">
+                <img src="img/tooth1.png" alt="tooth" class="tooth">
+                <div class="big-text-service">Лечение кариеса</div>
+                <div class="medium-text-service">Безболезненное пломбирование за один визит. Используем светоотверждаемые пломбы Estelite (Япония), которые не отличаются от естественной эмали.</div>
+                <div class="medium-text-service  blue">Цена: 25 000₸</div>
+            </div>
+
+            <div class="service-cart">
+                <img src="img/tooth2.png" alt="tooth" class="tooth">
+                <div class="big-text-service">Удаление зубов</div>
+                <div class="medium-text-service">Атравматичное удаление даже сложных зубов с помощью пьезо-аппарата.  Минимальный отек и заживление за 3-5 дней. Всегда предлагаем варианты  протезирования после удаления.</div>
+                <div class="medium-text-service  blue">Цена: 15 000₸</div>
+            </div>
+
+            <div class="service-cart">
+                <img src="img/tooth3.png" alt="tooth" class="tooth">
+                <div class="big-text-service">Установка коронок</div>
+                <div class="medium-text-service">Металлокерамические (от 45 000 тнг) и циркониевые (от 80 000 тнг)  коронки. Делаем слепки цифровым сканером — без неприятного вкуса во рту. Срок изготовления — 3-5 дней</div>
+                <div class="medium-text-service  blue">Цена:от 45 000₸</div>
+            </div>
+
+
+            <div class="service-cart">
+                <img src="img/tooth4.png" alt="tooth" class="tooth">
+                <div class="big-text-service">Брекет-системы</div>
+                <div class="medium-text-service">Исправляем прикус с комфортом. Металлические, керамические, лингвальные брекеты и элайнеры.Регулярное наблюдение у ортодонта и  гарантированный результат.</div>
+                <div class="medium-text-service  blue">Цена:от 200 000₸</div>
+            </div>
+
+            <div class="service-cart">
+                <img src="img/tooth5.png" alt="tooth" class="tooth">
+                <div class="big-text-service">Чистка зубов</div>
+                <div class="medium-text-service">Удаляем зубной камень и налет ультразвуком + AirFlow. Осветляем эмаль на 1-2 тона без химии. Рекомендуем проходить каждые 6 месяцев для  профилактики кариеса.</div>
+                <div class="medium-text-service  blue">Цена:от 15 000₸</div>
+            </div>
+
+            <div class="service-cart">
+                <img src="img/tooth6.png" alt="tooth" class="tooth">
+                <div class="big-text-service">Лечение пульпита</div>
+                <div class="medium-text-service">Микроскопная эндодонтия — чистим каналы с точностью до микрона.  Используем гуттаперчу и 3D-пломбирование. Гарантия отсутствия осложнений — 5 лет.</div>
+                <div class="medium-text-service  blue">Цена:от 25 000₸</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="doctors-section" id="doctors">
+        <div class="big-text align">Наши лучшие специалисты</div>
+
+        <div class="all-doctor">
+            <div class="doctor">
+                <img src="img/doctor1.png" alt="doctor" class="doctor-img">
+
+                <div class="under-text-doctors">
+                    <div class="doctor-name">Алишер Каримов</div>
+                    <div class="doctor-name-under">Главный врач, хирург-имплантолог</div>
+                    <div class="doctor-time">Прием: Пн, Ср, Пт (9:00–18:00)</div>
+                    <a href="https://wa.me/+77761518592" class="mini-btn">Написать врачу</a>
+                </div>
+            </div>
+
+
+            <div class="doctor">
+                <img src="img/doctor2.png" alt="doctor" class="doctor-img">
+
+                <div class="under-text-doctors">
+                    <div class="doctor-name">Дария Нургалиева</div>
+                    <div class="doctor-name-under">Ортодонт, эндодонтист</div>
+                    <div class="doctor-time">Прием: Пн–Сб (по записи)</div>
+                    <a href="https://wa.me/+77761518592" class="mini-btn">Написать врачу</a>
+                </div>
+            </div>
+
+
+            <div class="doctor">
+                <img src="img/doctor3.png" alt="doctor" class="doctor-img2">
+
+                <div class="under-text-doctors">
+                    <div class="doctor-name">Айгерим Садыкова</div>
+                    <div class="doctor-name-under">Терапевт, детский стоматолог</div>
+                    <div class="doctor-time">Прием: Вт, Чт, Сб (10:00–19:00)</div>
+                    <a href="https://wa.me/+77761518592" class="mini-btn">Написать врачу</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="question-section" id="questions">
+        <div class="big-text align">Ответы на частые вопросы</div>
+
+        <div class="questions">
+            <div class="question-container">
+                <div class="question">
+                <div class="question-text">Можно ли срочно удалить зуб?</div>
+                <div class="question-btn"><img src="img/arrow.png" alt="arrow" class="arrow-btn"></div>
+                </div>
+                <div class="answer">
+                      Да, мы оказываем услуги срочного удаления зубов. Доктор Алишер Каримов принимает экстренных пациентов без очереди. Время ожидания - не более 30 минут. Используем современные анестетики для полного обезболивания.
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="question">
+                <div class="question-text">Есть ли скидки пенсионерам?</div>
+                <div class="question-btn"><img src="img/arrow.png" alt="arrow" class="arrow-btn"></div>
+                </div>
+                <div class="answer">
+                    Да, 10% на все услуги при предъявлении удостоверения.
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="question">
+                <div class="question-text">Какие анализы нужны для имплантации?</div>
+                <div class="question-btn"><img src="img/arrow.png" alt="arrow" class="arrow-btn"></div>
+                </div>
+                <div class="answer">
+                    Для имплантации потребуется: общий анализ крови (давность до 10 дней), коагулограмма, анализ на глюкозу. Остальные анализы (при необходимости) можно сдать у нас в клинике. Первичная консультация и 3D-диагностика - бесплатно.
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="question">
+                <div class="question-text">Как записаться на прием?</div>
+                <div class="question-btn"><img src="img/arrow.png" alt="arrow" class="arrow-btn"></div>
+                </div>
+                <div class="answer">
+                    Вы можете записаться: <br>
+                    1.По телефону: +7 777 777 77 77 <br>
+                    2.Через Whatsapp/Telegram <br>
+                    3.Нажать на кнопу записаться сверху <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback-section" id="feedback">
+        <div class="big-text align">Ваши отзывы</div>
+
+        <div class="feedback">
+             <div class="feedback-btn"><img src="img/arrow.png" alt="arrow" class="feedback-arrow-btn-left"></div>
+             
+             <div class="feedback-container1">
+                <div class="upper-feedback-container">
+                    <div class="avatar-name">
+                        <div class="background-avatar"><img src="img/aliya.png" alt="avatar" class="avatar"></div>
+                        <div class="feedback-name">Алия К</div>
+                    </div>
+                    <img src="img/stars.png" alt="stars" class="stars">
+                </div>
+                <div class="feedback-text">«Очень довольна лечением у доктора Айгерим! Ребенок боялся  стоматологов, но здесь ему понравилось — теперь сам просится на осмотры. Спасибо за терпение и доброту!»</div>
+             </div>
+
+             <div class="feedback-container2">
+                <div class="upper-feedback-container">
+                    <div class="avatar-name">
+                        <div class="background-avatar"><img src="img/arman.png" alt="avatar" class="avatar"></div>
+                        <div class="feedback-name">Арман Ж</div>
+                    </div>
+                    <img src="img/stars.png" alt="stars" class="stars">
+                </div>
+                <div class="feedback-text">«Ставил импланты у доктора Алишера. Все прошло идеально, без боли и  осложнений. Через 3 месяца уже забыл, что это не свои зубы. Рекомендую  клинику!»</div>
+             </div>
+
+             <div class="feedback-btn"><img src="img/arrow.png" alt="arrow" class="feedback-arrow-btn-right"></div>
+        </div>
+    </section>
+
+    <footer id="contacts">
+        <div class="footer-line">
+        <div class="logo-footer">
+            <div class="logo">Smile<span class="black-color">Lab</span>   </div>
+            <div class="under-logo">Cтоматология нового уровня. Безболезненное лечение, европейские стандарты и гарантия качества для вашей идеальной улыбки.</div>
+        </div>
+
+        <div class="right-footer">
+            <div class="menu-text">
+            <p class="big-text-footer">Меню</p>
+            <a href="#services" class="menu-footer">Услуги</a>
+            <a href="#doctors" class="menu-footer">Врачи</a>
+            <a href="#questions" class="menu-footer">Вопросы</a>
+            <a href="#feedback" class="menu-footer">Отзывы</a>
+            <a href="#contacts" class="menu-footer">Контакты</a>
+            </div>
+
+                <div class="menu-text">
+            <p class="big-text-footer">Контакты</p>
+            <a href="https://wa.me/+77761518592" class="menu-footer">+7 776 151 8592</a>
+            <a href="mailto:bakendaniyar@gmail.com" class="menu-footer">bakendaniyar@gmail.com</a>
+            </div>
+
+            <div class="menu-text">
+            <p class="big-text-footer">Соц-сети</p>
+            <div class="message-all">
+            <a href="https://wa.me/+77761518592"><img src="img/whatsapp.png" alt="whatsapp" class="messanger-footer"></a>
+                <a href="https://www.instagram.com/daniyar_baken/"><img src="img/instagram.png" alt="instagram" class="messanger-footer"></a>
+                <a href="https://t.me/BakenDaniyar"><img src="img/telegram.png" alt="telegram" class="messanger-footer"></a>
+            </div></div>
+        </div>
+        </div>
+
+        <div class="my-company">© 2025 Baken Daniyar. Все права защищены</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

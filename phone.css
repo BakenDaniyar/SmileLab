@@ -1,0 +1,414 @@
+@media(max-width:768px){
+header {
+        margin: 15px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .logo {
+        font-size: 24px;
+        z-index: 1001;
+    }
+
+    .header-texts,
+    .btn:not(.mobile-btn) {
+        display: none;
+    }
+
+    .btn2{
+padding:8px 16px;
+font-size:14px;
+}
+
+
+    .burger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 1001;
+        position: relative;
+    }
+
+    .burger-icon span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #333;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        padding: 20px;
+    }
+
+    .mobile-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .mobile-menu .menu {
+        font-size: 20px;
+        color: #333;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-menu .menu:hover {
+        color: #01CFC9;
+    }
+
+    .mobile-btn {
+        margin-top: 20px;
+        width: 80%;
+        max-width: 250px;
+    }
+
+    /* Animation for burger icon when menu is open */
+    .burger-icon.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-icon.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+/*heroblock*/
+
+.hero-block{
+    display: flex;
+    align-items: center;
+margin-left:30px;
+margin-right:30px;
+margin-top:30px;
+justify-content:center;
+flex-direction: column;
+text-align: center;
+}
+.for-phone{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left:0px;
+    align-items: center;
+}
+
+.big-text{
+    display: flex;
+    justify-content: center;
+font-size: 25px;
+margin-bottom:0px;
+text-align: center;
+font-weight: 700;
+}
+.width-main{
+width:350px;
+}
+.medium-text{
+        display: flex;
+    justify-content: center;
+font-size: 12px;
+width:400px;
+margin-bottom:20px;
+text-align: center;
+}
+.all-messanger{
+
+gap:25px;
+margin-top:30px;
+}
+.messanger{
+width:30px;
+height:30px;
+}
+.main-img{
+width:350px;
+height:415px;
+}
+
+
+
+
+
+
+/*contacts-section*/
+.contacts-section{
+    display:flex;
+    flex-wrap: wrap;
+gap:40px;
+padding-top:20px;
+padding-bottom:20px;
+margin-top:75px;
+}
+.contact{
+gap:10px;
+}
+.contact-img{
+height:38px;
+}
+.big-text-contact{
+font-size:18px;
+}
+.small-text-contact{
+font-size:12px;
+}
+
+
+
+ .services-section {
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+
+  .grid-services-carts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0 0 0;
+  }
+
+  .service-cart {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .tooth {
+    width: 70px;
+    height: 70px;
+    padding-top: 10px;
+  }
+
+  .big-text-service {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+
+  .medium-text-service {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .blue {
+    padding-bottom: 20px;
+  }
+
+  .big-text.align {
+    font-size: 28px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .doctors-section {
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+
+  .all-doctor {
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0 0 0;
+  }
+
+  .doctor {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .doctor-img,
+  .doctor-img2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom:-30px;
+  }
+
+  .under-text-doctors {
+    padding: 20px 15px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .doctor-name {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .doctor-name-under {
+    font-size: 16px;
+  }
+
+  .doctor-time {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  .mini-btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+
+
+
+
+/*question-section*/
+.question-section{
+margin-top:50px;
+}
+.questions{
+    margin-top:30px;
+    gap:20px;
+}
+.question-container{
+    width:80%;
+    padding:20px 20px;
+}
+.question-btn{
+width:30px;
+height: 30px;
+}
+
+.answer{
+font-size:14px;
+}
+.question-text{
+    font-size:16px;
+}
+
+
+/*feedback-section*/
+.feedback-section{
+margin-top:50px;
+}
+.feedback{
+    margin-top:30px;
+}
+.feedback-btn{
+    width:40px;
+    height:40px;
+border-radius:100px;
+margin-left:20px;
+margin-right:20px;
+}
+.avatar-name{
+gap:15px;
+}
+.background-avatar{
+width:30px;
+height:30px;
+}
+.avatar{
+width:30px;
+height:30px;
+}
+.feedback-name{
+font-size:17px;
+font-weight: 700;
+}
+.stars{
+height:15px;
+}
+.feedback-text{
+    margin-top:16px;
+width:90%;
+font-size:12px;
+font-weight: 500;
+}
+.feedback-container1{
+border-radius:20px;
+padding:30px 20px;
+width:60%;
+}
+.feedback-container2{
+display:none;
+border-radius:20px;
+padding:30px 20px;
+width:60%;
+}
+
+
+.footer-line {
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .logo-footer {
+    align-items: center;
+  }
+
+  .under-logo {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .right-footer {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .menu-text {
+    align-items: center;
+  }
+
+  .big-text-footer {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .menu-footer {
+    font-size: 16px;
+  }
+
+  .message-all {
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .messanger-footer {
+    width: 28px;
+    height: 28px;
+  }
+
+  .my-company {
+    margin: 30px 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+
+
+
+.modal {
+    width: 95%;
+    padding: 6%;
+  }
+}
