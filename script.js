@@ -84,45 +84,78 @@ const feedbacks =[
     }
 
 ]
-
-
-let currentIndex = 0;
-const container = document.querySelector(".feedback-container1"); // Используем только один контейнер
+ let currentIndex = 0;
+const container1 = document.querySelector(".feedback-container1");
+const container2 = document.querySelector(".feedback-container2");
 const leftBtn = document.querySelector(".feedback-arrow-btn-left");
 const rightBtn = document.querySelector(".feedback-arrow-btn-right");
 
-// Скрываем второй контейнер в мобильной версии
-document.querySelector(".feedback-container2").style.display = "none";
-
 function renderFeedback(container, data) {
-  container.innerHTML = `
-    <div class="upper-feedback-container">
-      <div class="avatar-name">
-        <div class="background-avatar"><img src="${data.img}" alt="avatar" class="avatar"></div>
-        <div class="feedback-name">${data.name}</div>
-      </div>
-      <img src="${data.star}" alt="stars" class="stars">
-    </div>
-    <div class="feedback-text">${data.feedback}</div>
-  `;
+    if (!container || !data) return;
+    container.innerHTML = `
+        <div class="upper-feedback-container">
+            <div class="avatar-name">
+                <div class="background-avatar"><img src="${data.img}" alt="avatar" class="avatar"></div>
+                <div class="feedback-name">${data.name}</div>
+            </div>
+            <img src="${data.star}" alt="stars" class="stars">
+        </div>
+        <div class="feedback-text">${data.feedback}</div>
+    `;
 }
 
 function updateFeedback() {
-  renderFeedback(container, feedbacks[currentIndex]);
+    if (!container1 || !container2) return;
+    
+    // Для десктопной версии (ширина > 1024px)
+    if (window.innerWidth > 1024) {
+        container2.style.display = "block";
+        renderFeedback(container1, feedbacks[currentIndex]);
+        // Для нечетного количества отзывов
+        const nextIndex = (currentIndex + 1) % feedbacks.length;
+        renderFeedback(container2, feedbacks[nextIndex]);
+    } 
+    // Для планшетов и телефонов
+    else {
+        container2.style.display = "none";
+        renderFeedback(container1, feedbacks[currentIndex]);
+    }
 }
 
-leftBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + feedbacks.length) % feedbacks.length;
-  updateFeedback();
-});
+function moveLeft() {
+    if (window.innerWidth > 1024) {
+        // Для десктопа - переключаем по 1 отзыву (для обоих контейнеров)
+        currentIndex = (currentIndex - 1 + feedbacks.length) % feedbacks.length;
+    } else {
+        // Для мобильных - переключаем по 1 отзыву
+        currentIndex = (currentIndex - 1 + feedbacks.length) % feedbacks.length;
+    }
+    updateFeedback();
+}
 
-rightBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % feedbacks.length;
-  updateFeedback();
-});
+function moveRight() {
+    if (window.innerWidth > 1024) {
+        // Для десктопа - переключаем по 1 отзыву (для обоих контейнеров)
+        currentIndex = (currentIndex + 1) % feedbacks.length;
+    } else {
+        // Для мобильных - переключаем по 1 отзыву
+        currentIndex = (currentIndex + 1) % feedbacks.length;
+    }
+    updateFeedback();
+}
+
+// Назначаем обработчики событий
+if (leftBtn && rightBtn) {
+    leftBtn.addEventListener("click", moveLeft);
+    rightBtn.addEventListener("click", moveRight);
+}
+
+// Обновляем при изменении размера окна
+window.addEventListener('resize', updateFeedback);
 
 // Инициализация при загрузке
 updateFeedback();
+
 
 
 

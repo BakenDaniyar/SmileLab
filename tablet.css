@@ -156,7 +156,7 @@ box-shadow:0 6px 12px rgb(0,0,0,0.25) ;
 .doctor-img{
     display: flex;
     justify-content: center;
-    height:333px;
+    height:60%;
     margin-bottom:-7px;
     width:333px;
     margin-left:55px;
@@ -232,10 +232,17 @@ height:60px;
 font-size:25px;
 font-weight: 700;
 }
-
+.feedback-container2 {
+    display: none !important;
+  }
+  
+  .feedback-container1 {
+    width: 80%;
+    margin: 0 auto;
+  }
 .feedback-text{
     margin-top:20px;
-width:453px;
+width:100%;
 font-size:16px;
 font-weight: 500;
 }
