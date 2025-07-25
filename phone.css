@@ -136,8 +136,8 @@ width:350px;
 .medium-text{
         display: flex;
     justify-content: center;
-font-size: 12px;
-width:400px;
+    font-size: 12px;
+width:80%;
 margin-bottom:20px;
 text-align: center;
 }
