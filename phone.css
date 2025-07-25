@@ -129,9 +129,10 @@ font-size: 25px;
 margin-bottom:0px;
 text-align: center;
 font-weight: 700;
+
 }
 .width-main{
-width:350px;
+width:95%;
 }
 .medium-text{
         display: flex;
@@ -151,8 +152,8 @@ width:30px;
 height:30px;
 }
 .main-img{
-width:350px;
-height:415px;
+width:90%;
+height:auto;
 }
 
 
